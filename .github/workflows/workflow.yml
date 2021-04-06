@@ -7,11 +7,11 @@ jobs:
   action:
     runs-on: ubuntu-latest
     steps:
-#    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
     - name: check feedback
       id: feedback
-      uses: Grunler/devops-course/contributions/course-automation/augustjo-grunler
+      uses: Grunler/devops-course/contributions/course-automation/augustjo-grunler@feedbackcheck
       with:
         repo-token: ${{secrets.GITHUB_TOKEN}}
         minimal-wordcount: 500
