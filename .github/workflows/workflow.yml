@@ -11,7 +11,7 @@ jobs:
 
     - name: check feedback
       id: feedback
-      uses: ./contributions/course-automation/augustjo-grunler
+      uses: Grunler/dev-ops/contributions/course-automation/augustjo-grunler@feedbackcheck
       with:
         repo-token: ${{secrets.GITHUB_TOKEN}}
         minimal-wordcount: 500
